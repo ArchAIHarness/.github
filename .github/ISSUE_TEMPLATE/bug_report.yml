@@ -1,0 +1,92 @@
+name: 🐞 Bug 报告 · Bug Report
+description: 提交一个可复现的缺陷,帮助我们改进 ArchAIHarness · Report a reproducible bug
+title: "[Bug] <在此简述问题 / Brief description>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你为 **ArchAIHarness** 提交 Bug 报告。
+        Thanks for taking the time to report a bug.
+
+        在提交前,请先确认:
+        - 已搜索 [Issues](../issues?q=) 与 [Discussions](../discussions),确认问题尚未被报告
+        - 已尝试在最新版本上复现
+        - 提供的复现步骤足以让维护者在本地还原
+
+  - type: input
+    id: affected-repo
+    attributes:
+      label: 受影响仓库 · Affected Repository
+      description: 哪个仓库或模块出现了问题? · Which repository or module is affected?
+      placeholder: 例如 framework / docs / mcp-sdk
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本 · Version
+      description: 使用的版本号、tag、commit SHA · Version, tag, or commit SHA
+      placeholder: 例如 v0.1.0 / commit abc1234
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境 · Environment
+      description: 操作系统、JDK、Maven、数据库等版本 · OS, JDK, Maven, DB versions, etc.
+      placeholder: |
+        - OS: macOS 14.5 / Ubuntu 22.04
+        - JDK: 17.0.12-tem
+        - Maven: 3.9.10
+        - Other: ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤 · Steps to Reproduce
+      description: 请提供最小可复现示例 · Provide minimal reproducible steps
+      placeholder: |
+        1. 执行 `mvn ...`
+        2. 调用接口 `POST /xxx`
+        3. 观察到 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为 · Expected Behavior
+      description: 你预期应该发生什么 · What did you expect to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为 · Actual Behavior
+      description: 实际观察到的现象、错误信息、堆栈 · What actually happened, including stack traces
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息 · Additional Context
+      description: 截图、日志、相关 Issue 链接 · Screenshots, logs, related issues
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 行为准则 · Code of Conduct
+      options:
+        - label: 我已阅读并同意遵守项目的贡献规范与行为准则 · I have read and agree to follow this project's Code of Conduct
+          required: true

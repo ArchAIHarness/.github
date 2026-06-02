@@ -1,0 +1,66 @@
+name: 📖 文档问题 · Documentation Issue
+description: 报告文档错误、缺失或可改进之处 · Report documentation errors, gaps, or improvements
+title: "[Docs] <在此简述问题 / Brief description>"
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助我们完善文档。
+        Thanks for helping us improve the documentation.
+
+  - type: input
+    id: doc-location
+    attributes:
+      label: 文档位置 · Document Location
+      description: 出问题的文档路径或链接 · Path or URL of the affected document
+      placeholder: 例如 docs/0xA0_实践方法/0xA1_架构设计入门指南.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型 · Issue Type
+      description: 这属于哪一类文档问题 · What kind of documentation issue is this?
+      options:
+        - 内容错误 · Incorrect content
+        - 内容缺失 · Missing content
+        - 表述不清 · Unclear wording
+        - 示例失效 · Broken example
+        - 链接失效 · Broken link
+        - 翻译问题 · Translation issue
+        - 其他 · Other
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 · Description
+      description: 具体说明问题所在 · Describe the issue in detail
+      placeholder: |
+        在第 N 行 / 第 N 章节,提到 ...
+        但实际应该是 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 改进建议 · Suggested Improvement
+      description: 你建议如何修改?(可选) · How do you suggest fixing it? (optional)
+      placeholder: |
+        建议改为 ...
+        或新增段落讲清 ...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: willing-pr
+    attributes:
+      label: 贡献意愿 · Willing to Contribute
+      options:
+        - label: 我愿意提交 PR 修复此问题 · I'm willing to submit a PR to fix this
+          required: false

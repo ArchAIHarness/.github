@@ -1,0 +1,84 @@
+name: 🚀 功能建议 · Feature Request
+description: 提出新功能或改进建议 · Suggest a new feature or improvement
+title: "[Feature] <在此简述需求 / Brief description>"
+labels: ["enhancement", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你为 **ArchAIHarness** 贡献创意。
+        Thanks for proposing an idea to improve ArchAIHarness.
+
+        在提交前,请先:
+        - 搜索 [Issues](../issues?q=) 与 [Discussions](../discussions) 避免重复
+        - 思考此功能是否符合项目的设计哲学(见 [docs/0x01_哲学理念](https://github.com/ArchAIHarness/docs/tree/main/0x01_%E5%93%B2%E5%AD%A6%E7%90%86%E5%BF%B5))
+
+  - type: input
+    id: target-repo
+    attributes:
+      label: 目标仓库 · Target Repository
+      description: 功能应落地在哪个仓库 · Which repository should this feature belong to?
+      placeholder: 例如 framework / mcp-sdk / skill-market
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题 · Problem Statement
+      description: 当前痛点、局限或缺失能力是什么? · What problem are you trying to solve?
+      placeholder: |
+        例如:
+        - 现在做 X 需要写大量样板代码
+        - 多租户场景下缺少 Y 能力
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望方案 · Proposed Solution
+      description: 希望以什么形式实现?有 API/配置/工作流的设想吗? · How would you like it implemented?
+      placeholder: |
+        - 新增 `@Foo` 注解,自动 ...
+        - 提供 CLI 命令 `xxx ...`
+        - 集成 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案 · Alternatives Considered
+      description: 你考虑过哪些其他做法,为什么不采用 · Other approaches you've considered
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 优先级评估 · Priority
+      description: 在你的场景中此功能的重要性 · How important is this in your scenario?
+      options:
+        - 锦上添花 · Nice to have
+        - 需要 · Needed
+        - 关键阻塞 · Critical / Blocking
+      default: 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息 · Additional Context
+      description: 参考链接、设计草图、相关 Issue · References, design sketches, related issues
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 行为准则 · Code of Conduct
+      options:
+        - label: 我已阅读并同意遵守项目的贡献规范与行为准则 · I have read and agree to follow this project's Code of Conduct
+          required: true

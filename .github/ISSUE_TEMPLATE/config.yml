@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 社区讨论 · Discussions
+    url: https://github.com/orgs/ArchAIHarness/discussions
+    about: 提问、分享想法、与社区交流 · Ask questions, share ideas, chat with the community
+  - name: 📚 文档与方法论 · Documentation
+    url: https://github.com/ArchAIHarness/docs
+    about: 在提 Issue 前,先查阅哲学、方法论与实践模式 · Read the philosophy, methodology, and patterns first
+  - name: 🔒 安全问题私下披露 · Security Disclosure
+    url: https://github.com/ArchAIHarness/.github/security/advisories/new
+    about: 请勿通过公开 Issue 报告安全漏洞 · Please do NOT report security vulnerabilities via public issues
