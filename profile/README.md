@@ -169,6 +169,10 @@ ArchAIHarness 的公开仓库不是并列摆放的项目列表，而是服务于
 
 它回答的是：为什么要这样做，如何判断一套 AI 工程体系是否可控，以及如何把架构认知转化为可传播、可复用的公开知识。
 
+此外，`docs` 也会承载少量思想外延内容，例如 [`心道循行`](https://github.com/ArchAIHarness/xindao-xunxing)。
+
+这类内容不作为 ArchAIHarness 的工程主线，而是用于解释认知校准、知行合一、循环反馈和自我约束如何影响长期工程判断。它服务于 AI 工程化主张，但不替代 DDD、AGENTS.md、MCP、Skills 等核心工程资产。
+
 <br/>
 
 ### 🧪 工程样例
