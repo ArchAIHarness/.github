@@ -195,11 +195,11 @@ Spring Cloud Gateway 场景下的示例工程。
 
 ### ⚙️ AI 协作能力
 
-#### [`skills`](https://github.com/ArchAIHarness/skills)
+#### [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows)
 
-可复用的 AI 协作技能集合。
+OpenCode 插件、Agents、Skills 与 Tools 的可复用工作流集合。
 
-用于沉淀特定任务下的流程、约束和执行方式，让工程审查、质量评估、知识整理等工作不再只依赖一次性提示词。
+用于把特定任务下的流程、约束和执行方式封装成可安装、可审计、可复用的 AI 协作能力，让工程审查、质量评估、知识整理等工作不再只依赖一次性提示词。
 
 <br/>
 
@@ -256,7 +256,7 @@ ArchAIHarness 仍处于持续建设阶段。
 - AI Agent / Skill / Plugin 的工程化封装；
 - 示例工程、文档和工具改进。
 
-你可以从阅读 [`docs`](https://github.com/ArchAIHarness/docs) 开始，也可以查看 [`framework`](https://github.com/ArchAIHarness/framework)、[`gateway`](https://github.com/ArchAIHarness/gateway) 和 [`skills`](https://github.com/ArchAIHarness/skills) 中的具体实践。
+你可以从阅读 [`docs`](https://github.com/ArchAIHarness/docs) 开始，也可以查看 [`framework`](https://github.com/ArchAIHarness/framework)、[`gateway`](https://github.com/ArchAIHarness/gateway) 和 [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows) 中的具体实践。
 
 <br/>
 

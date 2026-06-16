@@ -18,7 +18,7 @@ body:
     attributes:
       label: 目标仓库 · Target Repository
       description: 功能应落地在哪个仓库 · Which repository should this feature belong to?
-      placeholder: 例如 framework / mcp-sdk / skill-market
+      placeholder: 例如 framework / mcp-sdk / agent-workflows
     validations:
       required: true
 
