@@ -152,9 +152,10 @@ ArchAIHarness 的公开仓库不是并列摆放的项目列表，而是服务于
 每一类资产都对应一个持续验证的问题：
 
 - `docs` 用于验证认知如何被系统表达；
+- `zhuanlan-ai-and-agents` 用于验证认知能否被大众理解和检验；
 - `framework` 用于验证规则如何进入工程结构；
 - `gateway` 用于验证方法如何落到具体技术场景；
-- `skills` 用于验证协作流程如何被封装和复用；
+- `agent-workflows` 用于验证协作流程如何被封装和复用；
 - MCP、RAG、Plugins 和工具接口方向用于探索上下文如何进入 AI 工作流。
 
 这些资产不是用来包装一个已经完成的宏大生态，而是用来持续回答同一个问题：
@@ -169,7 +170,7 @@ ArchAIHarness 的公开仓库不是并列摆放的项目列表，而是服务于
 
 它回答的是：为什么要这样做，如何判断一套 AI 工程体系是否可控，以及如何把架构认知转化为可传播、可复用的公开知识。
 
-此外，`docs` 也会承载少量思想外延内容，例如 [`心道循行`](https://github.com/ArchAIHarness/xindao-xunxing)。
+此外，`docs` 也承载专栏内容，例如 [`看懂 AI 与智能体`](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents)（已独立仓库），以及少量思想外延内容，例如 [`心道循行`](https://github.com/ArchAIHarness/xindao-xunxing)。
 
 这类内容不作为 ArchAIHarness 的工程主线，而是用于解释认知校准、知行合一、循环反馈和自我约束如何影响长期工程判断。它服务于 AI 工程化主张，但不替代 DDD、AGENTS.md、MCP、Skills 等核心工程资产。
 
@@ -256,7 +257,7 @@ ArchAIHarness 仍处于持续建设阶段。
 - AI Agent / Skill / Plugin 的工程化封装；
 - 示例工程、文档和工具改进。
 
-你可以从阅读 [`docs`](https://github.com/ArchAIHarness/docs) 开始，也可以查看 [`framework`](https://github.com/ArchAIHarness/framework)、[`gateway`](https://github.com/ArchAIHarness/gateway) 和 [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows) 中的具体实践。
+你可以从阅读 [`docs`](https://github.com/ArchAIHarness/docs) 或 [`zhuanlan-ai-and-agents`](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents) 开始，也可以查看 [`framework`](https://github.com/ArchAIHarness/framework)、[`gateway`](https://github.com/ArchAIHarness/gateway) 和 [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows) 中的具体实践。
 
 <br/>
 
