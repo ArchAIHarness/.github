@@ -1,5 +1,8 @@
 <div align="center">
 
+<img src="../logo.svg" width="240" height="240" alt="ArchAIHarness">
+
+<br/>
 <br/>
 
 # 重塑 AI 时代下的软件开发新秩序
