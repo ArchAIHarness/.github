@@ -2,264 +2,60 @@
 
 # ArchAIHarness
 
-### 当 AI 接管生成，架构师必须接管秩序
+### AI 写代码，架构师写规矩
 
-<sub>面向 AI 时代软件工程的人机协同架构哲学与公开工程资产</sub>
-
-[![GitHub Org](https://img.shields.io/badge/Organization-ArchAIHarness-181717?style=flat-square&logo=github)](https://github.com/ArchAIHarness)
-[![Paradigm](https://img.shields.io/badge/Paradigm-DDD-blue?style=flat-square)](https://github.com/ArchAIHarness)
-[![Contract](https://img.shields.io/badge/Contract-AGENTS.md-7C3AED?style=flat-square)](https://github.com/ArchAIHarness)
-[![Practice](https://img.shields.io/badge/Practice-AI%20Engineering-0EA5E9?style=flat-square)](https://github.com/ArchAIHarness)
+![License](https://img.shields.io/badge/Open%20Source-MIT-green?style=flat-square)
+![Repos](https://img.shields.io/badge/Repos-30+-blue?style=flat-square)
+![Articles](https://img.shields.io/badge/Articles-22-orange?style=flat-square)
 
 </div>
 
-<br/>
+---
 
-## 🌪 问题 · 旧秩序遇到新协作者
+## 我们在做什么
 
-AI 让代码生成变得廉价，也让架构判断变得更贵。
+把多智能体协作从能演示推到能交付。
 
-传统软件工程并非没有秩序。分层架构、DDD、TDD、代码评审、微服务治理、云原生实践、权限模型、发布流程和质量门禁，都曾经有效支撑过复杂系统建设。
+过去 6 个月交付了：
 
-但 AI 进入工程现场后，协作对象变了，生成速度变了，上下文边界变了，审计难度也变了。
+- **Agent 控制面** — `agent-master` 在 K8s 上按人调度 Agent 实例，TTL 租约回收，透明 API 代理
+- **Agent Runtime 镜像** — `agent-image` / `agent-image-webui` / `build-on-vscode-opencode-image`，开箱即用的容器化 Agent 底座
+- **Agent 插件框架** — `agent-plugin` 的 agents + skills + tools 插拔式扩展（建设中）
+- **Agent IDE** — `agent-webui` 基于 OpenSumi 的 Web IDE 设计
+- **社区 Agent 平台** — 9 个 `community-*` 私有仓库，从 cloudlab 开源项目改造中
+- **22 篇专栏** — [看懂 AI 与智能体](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents)，日均 2 篇连载
 
-旧秩序仍然重要。问题是，它过去主要依赖人来理解、记忆和执行；而 AI 不会天然理解团队的边界、系统的历史、业务的语言和架构师的取舍。
+---
 
-如果仍然只把 AI 当成一个更快的代码生成器，工程系统会更快暴露出旧秩序无法被 AI 直接执行的问题：
+## 核心理念
 
-- 领域语义被泛化，业务语言变成通用代码；
-- 架构边界被模糊，分层和依赖关系被随手击穿；
-- 工程规范停留在文档里，AI 执行时并不清楚哪些规则不可越界；
-- 上下文散落在代码、文档、经验和口头判断中，AI 只能猜；
-- 产物缺少审查链路，问题难以回溯，认知也难以沉淀。
+**人立法，AI 执行，体系审计。**
 
-所以，AI 时代真正重要的问题不是“能不能更快写代码”，而是：
+架构师不写每一行代码。架构师写规则：
 
-> 当生成变得容易，系统是否仍然有边界，代码是否仍然属于这个系统，责任是否仍然能被审计。
+1. **定边界** — 领域划分、分层约束、上下文边界，写在 AGENTS.md 里，AI 能读、人能审
+2. **给工具** — Skills / MCP / Plugins，让 AI 在规则内执行，不出界
+3. **建审计** — 每步可检查、可回溯、可沉淀为新的规则
 
-<br/>
+---
 
-## 🧭 主张 · 认知重构秩序
+## 仓库速览
 
-> **架构师定义秩序，AI 在秩序中生长。**
+| 资产 | 说明 |
+|------|------|
+| [`docs`](https://github.com/ArchAIHarness/docs) | 方法论与实践指南 |
+| [`framework`](https://github.com/ArchAIHarness/framework) | DDD 多租户工程底座 |
+| [`gateway`](https://github.com/ArchAIHarness/gateway) | 反应式网关示例 |
+| [`agent-master`](https://github.com/ArchAIHarness/agent-master) | Agent 控制面（K8s 调度） |
+| [`agent-image`](https://github.com/ArchAIHarness/agent-image) | Agent 无头 Runtime 镜像 |
+| [`agent-image-webui`](https://github.com/ArchAIHarness/agent-image-webui) | Agent WebUI Runtime 镜像 |
+| [`agent-webui`](https://github.com/ArchAIHarness/agent-webui) | 基于 OpenSumi 的 Agent IDE |
+| [`agent-plugin`](https://github.com/ArchAIHarness/agent-plugin) | 插件框架（建设中） |
+| [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows) | 可复用 Agent 工作流模板（Pipeline / 审核 / 发布） |
+| [`feishu-bot`](https://github.com/ArchAIHarness/feishu-bot) | 飞书 IM Agent 接入（WebSocket + 消息桥 + 三道闸） |
+| [`community-*`](https://github.com/ArchAIHarness) | 社区 Agent 平台（私有，改造中） |
 
-ArchAIHarness 的判断是：AI 工程化不是抛弃传统工程秩序，也不是把旧流程原样搬给 AI。
-
-更关键的是，走出固有认知，重新理解架构、规范、上下文、工具和审计在 AI 协作中的表达方式。
-
-传统秩序需要被重新显式化、结构化、工具化，变成 AI 可以读取、遵循、执行并接受审查的工程秩序。
-
-这套实践遵循一个简单原则：
-
-> **人立法，AI 执行，体系审计。**
-
-- **人立法**：人负责方向判定、价值取舍、边界划定和质量底线。
-- **AI 执行**：AI 在明确上下文和工程契约中完成生成、修改、整理与协作。
-- **体系审计**：体系通过文档、模板、工具、Skills、MCP、插件和评审流程，让 AI 产物可检查、可回溯、可验证，并把问题沉淀为新的规则和能力。
-
-ArchAIHarness 要做的，不是再造一个宏大的工具集合，而是把这种认知重构沉淀为公开可阅读、可验证、可持续演进的工程资产。
-
-<br/>
-
-## 🔁 体系 · 不是流程，而是循环
-
-ArchAIHarness 不是几个仓库的简单组合，也不是一个已经完成的平台产品。
-
-它是一套面向 AI 协作开发的循环演进体系：认知向下变成规则，规则向下进入实践，实践借助工具执行，工具和结果再向上反馈认知。
-
-```text
-认知判断 → 协作规则 → 工程实践 → 工具执行 → 反馈校准 → 认知升级
-```
-
-这不是线性流程。
-
-线性流程只关心“下一步做什么”。循环机制关心的是：每一次执行后，系统有没有变得更清晰，规则有没有变得更准确，工具有没有更贴近真实问题，认知有没有被现实重新校准。
-
-### 认知判断：确定方向、边界与价值
-
-先判断为什么做、值不值得做、边界在哪里、长期如何演进。
-
-没有清晰的认知判断，方法和工具越多，越容易造成更快的混乱。
-
-### 协作规则：把判断转成可执行约束
-
-把认知判断写入 `AGENTS.md`、DDD 分层、命名规则、接口约束、测试策略、禁止事项和质量门禁。
-
-规则的价值不在于“被写下”，而在于能否被人理解、被 AI 遵循、被体系审查。
-
-### 工程实践：让规则进入真实系统
-
-用分层架构、DDD、微服务、云原生、多租户、权限模型、接口契约、测试策略和示例工程，把协作规则落到可阅读、可验证的工程结构里。
-
-### 工具执行：让方法可以重复运行
-
-Skills、MCP、Plugins、脚手架、质量评估脚本、自动化验证流程，都是认知和规则的外在载体。
-
-工具不是体系的起点。工具只是认知、规则和审计机制的外化。
-
-### 反馈校准：让现实反推认知
-
-测试结果、代码审查、质量报告、运行反馈、复盘结论会暴露规则是否准确、上下文是否充分、工具是否有效。
-
-这些反馈必须回到认知层，修正边界、调整节奏、完善方法，开启下一轮循环。
-
-这就是 ArchAIHarness 想证明的核心命题：
-
-> 架构不是旧流程的重复执行，而是在新协作对象出现后，对系统秩序的重新定义、重新表达、重新验证和持续演进。
-
-<br/>
-
-## 🛠 方法 · 工程方法谱系
-
-ArchAIHarness 不把方法论收敛成某一个框架、某一种流程或某个工具。
-
-它更像一套可组合的方法谱系：把架构思想、工程方法、AI 协作机制和工具化执行组合起来，让 AI 协作进入可控的工程秩序。
-
-### 🏛 架构思想：先定义系统秩序
-
-- **分层架构**：明确领域层、应用层、基础设施层和接口层职责，避免 AI 把代码写成无边界的过程脚本。
-- **DDD**：用限界上下文、聚合、领域服务和领域事件承载业务语义，让 AI 在业务语言和系统边界中工作。
-- **微服务**：用服务边界、接口契约和调用关系控制系统复杂度，而不是把服务拆分当作目的本身。
-- **云原生**：用容器、服务发现、配置、探针、可观测性和弹性设计，让工程结构具备运行时治理能力。
-- **多租户与权限模型**：把租户隔离、身份认证、访问控制和上下文透传作为平台能力，而不是散落在业务代码中的临时判断。
-
-### 🧪 工程方法：让设计、实现和验证可追踪
-
-- **SDD**：先写清目标、边界、接口、约束和验收标准，再让 AI 参与生成，减少上下文漂移。
-- **TDD**：先把行为变成可执行验证，再进入实现，让 AI 的修改接受失败用例和回归测试约束。
-- **代码审查与质量门禁**：用 review、静态检查、质量报告和运行验证确认 AI 产物是否符合工程契约。
-- **复盘与沉淀**：把一次交付中的设计取舍、问题和修正回写成文档、模板和新的规则。
-
-### 📜 协作契约：把规则写成 AI 能遵循的秩序
-
-- **AGENTS.md**：承载仓库级工程契约，包括架构规则、命名约定、分层边界、禁止事项、验证方式和协作流程。
-- **README / DOCS / ADR**：解释系统背景、设计意图和关键决策，避免 AI 只看局部代码做错误推断。
-- **规范化模板**：把接口、领域模型、测试、提交、复盘等重复结构模板化，降低协作漂移。
-
-### 🔌 上下文与执行：让方法进入工具链
-
-- **MCP / RAG**：把系统信息、领域参数、文档和工具能力结构化地暴露给 AI，减少依赖自然语言猜测系统状态。
-- **Skills**：把代码审查、质量评估、知识沉淀、文档整理、工程生成等任务封装为可加载的执行流程。
-- **Plugins / 工具脚本**：把常见检查、同步、生成和验证动作工具化，让方法论能被重复执行，而不是停留在文档里。
-- **Agent 工作流**：让不同职责的 AI Agent 在明确边界中协作，形成“执行—审查—沉淀”的闭环。
-
-<br/>
-
-## 🧩 公开资产 · 不是项目陈列，而是验证链路
-
-ArchAIHarness 的公开仓库不是并列摆放的项目列表，而是服务于同一套循环演进体系的证据链。
-
-每一类资产都对应一个持续验证的问题：
-
-- `docs` 用于验证认知如何被系统表达；
-- `zhuanlan-ai-and-agents` 用于验证认知能否被大众理解和检验；
-- `framework` 用于验证规则如何进入工程结构；
-- `gateway` 用于验证方法如何落到具体技术场景；
-- `agent-workflows` 用于验证协作流程如何被封装和复用；
-- MCP、RAG、Plugins 和工具接口方向用于探索上下文如何进入 AI 工作流。
-
-这些资产不是用来包装一个已经完成的宏大生态，而是用来持续回答同一个问题：
-
-> 这套认知能不能被表达、被执行、被验证，并在反馈中继续生长？
-
-### 📖 理念与方法论
-
-#### [`docs`](https://github.com/ArchAIHarness/docs)
-
-方法论、实践路径、设计原则与脱敏案例的沉淀入口。
-
-它回答的是：为什么要这样做，如何判断一套 AI 工程体系是否可控，以及如何把架构认知转化为可传播、可复用的公开知识。
-
-此外，`docs` 也承载专栏内容，例如 [`看懂 AI 与智能体`](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents)（已独立仓库），以及少量思想外延内容，例如 [`心道循行`](https://github.com/ArchAIHarness/xindao-xunxing)。
-
-这类内容不作为 ArchAIHarness 的工程主线，而是用于解释认知校准、知行合一、循环反馈和自我约束如何影响长期工程判断。它服务于 AI 工程化主张，但不替代 DDD、AGENTS.md、MCP、Skills 等核心工程资产。
-
-<br/>
-
-### 🧪 工程样例
-
-#### [`framework`](https://github.com/ArchAIHarness/framework)
-
-面向 AI 协作的软件工程样例底座。
-
-用于展示 DDD 分层、多租户基础语义、领域事件、权限模型和 `AGENTS.md` 工程契约如何结合，让架构约束变成 AI 可以读取、遵循和接受审查的工程结构。
-
-#### [`gateway`](https://github.com/ArchAIHarness/gateway)
-
-Spring Cloud Gateway 场景下的示例工程。
-
-用于展示鉴权扩展、租户上下文透传、网关边界、K8s 服务发现和反应式纪律如何在 AI 协作开发中被显式建模和约束。
-
-它不是完整的统一接入平台，也不替代认证中心、权限中心或业务网关治理平台。
-
-<br/>
-
-### ⚙️ AI 协作能力
-
-#### [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows)
-
-OpenCode 插件、Agents、Skills 与 Tools 的可复用工作流集合。
-
-用于把特定任务下的流程、约束和执行方式封装成可安装、可审计、可复用的 AI 协作能力，让工程审查、质量评估、知识整理等工作不再只依赖一次性提示词。
-
-<br/>
-
-### 🔗 上下文与工具连接
-
-#### MCP / Plugins
-
-MCP 与插件方向用于探索上下文结构化、工具调用和审计链路。
-
-目标是让 AI 不只依赖自然语言猜测系统，而是在明确上下文、明确工具边界和明确审查规则下参与工程。
-
-<br/>
-
-## 🚧 当前状态
-
-ArchAIHarness 仍处于持续建设阶段。
-
-这里的仓库主要用于：
-
-- 表达 AI 工程化与架构治理的方法论；
-- 提供可阅读、可运行、可参考的工程样例；
-- 沉淀可复用的 AI 协作工具和技能；
-- 验证“人立法，AI 执行，体系审计”的研发范式。
-
-它们不是一个已经完成的商业化平台，也不代表某个唯一正确的工程答案。
-
-更准确地说，这是一个开放的长期实验：用公开资产持续验证方法论，并通过每一轮实践反馈推动体系继续演进。
-
-<br/>
-
-## 🎯 适合谁
-
-如果你关注以下问题，可能会对 ArchAIHarness 感兴趣：
-
-- 如何在复杂业务系统中使用 AI，而不是让 AI 破坏架构边界；
-- 如何把 DDD、分层架构、微服务、云原生和 AI 协作结合起来；
-- 如何设计 `AGENTS.md`，让 AI 理解团队工程契约；
-- 如何通过 MCP、RAG、Skills、插件等方式沉淀可复用 AI 能力；
-- 如何把个人或团队的方法论建设成长期公开资产。
-
-如果你只需要一次性的代码生成提示词，这里可能会显得过重。
-
-<br/>
-
-## 🤝 参与方式
-
-欢迎围绕以下方向交流或贡献：
-
-- AI 工程化实践；
-- DDD、分层架构与复杂业务建模；
-- 微服务、云原生、多租户和权限模型设计；
-- `AGENTS.md` 工程契约设计；
-- MCP、RAG 与上下文工程；
-- AI Agent / Skill / Plugin 的工程化封装；
-- 示例工程、文档和工具改进。
-
-你可以从阅读 [`docs`](https://github.com/ArchAIHarness/docs) 或 [`zhuanlan-ai-and-agents`](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents) 开始，也可以查看 [`framework`](https://github.com/ArchAIHarness/framework)、[`gateway`](https://github.com/ArchAIHarness/gateway) 和 [`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows) 中的具体实践。
-
-<br/>
+---
 
 <div align="center">
 
