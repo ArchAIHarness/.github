@@ -19,7 +19,7 @@
 
 ### 专栏
 
-[![看懂 AI 与智能体](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents/raw/main/assets/%E4%B8%93%E6%A0%8F%E5%B0%81%E9%9D%A2/cover.png)](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents)
+<a href="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents"><img src="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents/raw/main/assets/%E4%B8%93%E6%A0%8F%E5%B0%81%E9%9D%A2/cover.png" width="400"></a>
 
 **看懂 AI 与智能体** · 从概念到实践 · 22 篇连载
 
