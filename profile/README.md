@@ -2,7 +2,7 @@
 
 # ArchAIHarness
 
-### AI 写代码，架构师写规矩
+### 重塑 AI 时代下的软件开发新秩序
 
 ![License](https://img.shields.io/badge/Open%20Source-MIT-green?style=flat-square)
 ![Repos](https://img.shields.io/badge/Repos-30+-blue?style=flat-square)
