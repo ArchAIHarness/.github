@@ -10,60 +10,64 @@
 
 <table>
 <tr>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents" style="text-decoration:none;color:#1a1a1a">
-<img src="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents/raw/main/assets/%E4%B8%93%E6%A0%8F%E5%B0%81%E9%9D%A2/cover.png" width="100%"><br/><br/>
-<b>看懂 AI 与智能体</b><br/>
-<span style="font-size:12px;color:#888">22 篇连载</span>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents" style="text-decoration:none;color:#1a1a1a;display:block">
+<img src="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents/raw/main/assets/%E4%B8%93%E6%A0%8F%E5%B0%81%E9%9D%A2/cover.png" width="140"><br/>
+<b style="font-size:13px">看懂 AI 与智能体</b><br/>
+<span style="font-size:11px;color:#888">22 篇连载</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/agent-master" style="text-decoration:none;color:#1a1a1a">
-<b>agent-master</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/agent-master" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">agent-master</b><br/><br/>
 <span style="font-size:12px;color:#888">Agent 控制面</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/agent-image" style="text-decoration:none;color:#1a1a1a">
-<b>agent-image</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/agent-image" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">agent-image</b><br/><br/>
 <span style="font-size:12px;color:#888">Runtime 镜像</span>
 </a>
 </td>
 </tr>
 <tr>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/agent-webui" style="text-decoration:none;color:#1a1a1a">
-<b>agent-webui</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/agent-webui" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">agent-webui</b><br/><br/>
 <span style="font-size:12px;color:#888">Agent IDE</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/agent-plugin" style="text-decoration:none;color:#1a1a1a">
-<b>agent-plugin</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/agent-plugin" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">agent-plugin</b><br/><br/>
 <span style="font-size:12px;color:#888">插件框架</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/agent-workflows" style="text-decoration:none;color:#1a1a1a">
-<b>agent-workflows</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/agent-workflows" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">agent-workflows</b><br/><br/>
 <span style="font-size:12px;color:#888">工作流模板</span>
 </a>
 </td>
 </tr>
 <tr>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/framework" style="text-decoration:none;color:#1a1a1a">
-<b>framework</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/framework" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">framework</b><br/><br/>
 <span style="font-size:12px;color:#888">DDD 底座</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
-<a href="https://github.com/ArchAIHarness/feishu-bot" style="text-decoration:none;color:#1a1a1a">
-<b>feishu-bot</b><br/>
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness/feishu-bot" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">feishu-bot</b><br/><br/>
 <span style="font-size:12px;color:#888">飞书原生 Agent</span>
 </a>
 </td>
-<td align="center" style="border:1px solid #e8e8e8;border-radius:12px;padding:20px 12px">
+<td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
+<a href="https://github.com/ArchAIHarness" style="text-decoration:none;color:#1a1a1a;display:block">
+<b style="font-size:14px">community-*</b><br/><br/>
+<span style="font-size:12px;color:#888">社区平台</span>
+</a>
 </td>
 </tr>
 </table>
