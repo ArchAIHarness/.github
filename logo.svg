@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#ffffff"/>
   <!-- 拱门 = 架构的秩序 -->
   <g transform="translate(200,155)">
     <path d="M-65,65 L-65,-15 A65,65 0 0,1 65,-15 L65,65" 
