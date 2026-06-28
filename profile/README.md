@@ -16,18 +16,64 @@
 
 <br/>
 
-| | |
-|:--|:--|
-| **🤖 Agent 控制面**<br/>K8s 调度 · 多租户 · 透明代理 | **[`agent-master`](https://github.com/ArchAIHarness/agent-master)** |
-| **📦 Runtime 镜像**<br/>无头 + WebUI 双版本容器化底座 | **[`agent-image`](https://github.com/ArchAIHarness/agent-image)**
-| **🖥️ Agent IDE**<br/>基于 OpenSumi 的 Web IDE | **[`agent-webui`](https://github.com/ArchAIHarness/agent-webui)** |
-| **🧩 插件框架**<br/>Agents · Skills · Tools 插拔式扩展 | **[`agent-plugin`](https://github.com/ArchAIHarness/agent-plugin)** |
-| **⚙️ Agent 工作流**<br/>可复用工作流模板集 | **[`agent-workflows`](https://github.com/ArchAIHarness/agent-workflows)** |
-| **💬 飞书原生 Agent**<br/>消息桥 · 三道闸 · 说了就真发 | **[`feishu-bot`](https://github.com/ArchAIHarness/feishu-bot)** |
-| **🏗️ 工程底座**<br/>DDD 脚手架 + 网关样例 | **[`framework`](https://github.com/ArchAIHarness/framework) · [`gateway`](https://github.com/ArchAIHarness/gateway)** |
-| **📝 技术专栏**<br/>日均 2 篇，已发布 22 篇 | **[`看懂 AI 与智能体`](https://github.com/ArchAIHarness/zhuanlan-ai-and-agents)** |
+<div align="center">
 
-<br/>
+<table>
+<tr>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>🤖 agent-master</b><br/><br/>
+<span style="font-size:13px;color:#666;">Agent 控制面<br/>K8s 调度 · 多租户</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-master">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>📦 agent-image</b><br/><br/>
+<span style="font-size:13px;color:#666;">Runtime 镜像<br/>无头 + WebUI 双版</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-image">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>🖥️ agent-webui</b><br/><br/>
+<span style="font-size:13px;color:#666;">基于 OpenSumi<br/>的 Agent IDE</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-webui">→</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>🧩 agent-plugin</b><br/><br/>
+<span style="font-size:13px;color:#666;">插件框架<br/>Agents · Skills · Tools</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-plugin">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>⚙️ agent-workflows</b><br/><br/>
+<span style="font-size:13px;color:#666;">可复用工作流<br/>模板集</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-workflows">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>💬 feishu-bot</b><br/><br/>
+<span style="font-size:13px;color:#666;">飞书原生 Agent<br/>消息桥 · 三道闸</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/feishu-bot">→</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>🏗️ framework</b><br/><br/>
+<span style="font-size:13px;color:#666;">DDD 多租户<br/>工程底座</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/framework">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>📝 技术专栏</b><br/><br/>
+<span style="font-size:13px;color:#666;">日均 2 篇<br/>已发布 22 篇</span><br/><br/>
+<a href="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents">→</a>
+</td>
+<td align="center" width="180" style="border:1px solid #e0e0e0;border-radius:12px;padding:20px;">
+<b>🔧 community-*</b><br/><br/>
+<span style="font-size:13px;color:#666;">社区 Agent 平台<br/>改造中</span><br/><br/>
+<a href="https://github.com/ArchAIHarness">→</a>
+</td>
+</tr>
+</table>
+
+</div>
+
 <br/>
 
 ---
