@@ -24,15 +24,13 @@
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/agent-master" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/agent-master.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-master" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>agent-master</b><br/>
 <span style="font-size:12px;color:#888">Agent 控制面</span>
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/agent-image" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/agent-image.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-image" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>agent-image</b><br/>
 <span style="font-size:12px;color:#888">Runtime 镜像</span>
 </a>
@@ -40,22 +38,19 @@
 </tr>
 <tr>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/agent-webui" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/agent-webui.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-webui" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>agent-webui</b><br/>
 <span style="font-size:12px;color:#888">基于 OpenSumi 的 IDE</span>
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/agent-plugin" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/agent-plugin.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-plugin" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>agent-plugin</b><br/>
 <span style="font-size:12px;color:#888">插件框架</span>
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/agent-workflows" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/agent-workflows.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/agent-workflows" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>agent-workflows</b><br/>
 <span style="font-size:12px;color:#888">工作流模板</span>
 </a>
@@ -63,22 +58,19 @@
 </tr>
 <tr>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/framework" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/framework.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/framework" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>framework</b><br/>
 <span style="font-size:12px;color:#888">DDD 多租户底座</span>
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness/feishu-bot" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/feishu-bot.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness/feishu-bot" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>feishu-bot</b><br/>
 <span style="font-size:12px;color:#888">飞书原生 Agent</span>
 </a>
 </td>
 <td align="center" style="border:none;background:#f6f8fa;border-radius:16px;padding:24px 12px">
-<a href="https://github.com/ArchAIHarness" style="text-decoration:none;color:#1a1a1a">
-<img src="icons/community.svg" width="48"><br/><br/>
+<a href="https://github.com/ArchAIHarness" style="text-decoration:none;color:#1a1a1a"><br/>
 <b>community-*</b><br/>
 <span style="font-size:12px;color:#888">社区平台</span>
 </a>
