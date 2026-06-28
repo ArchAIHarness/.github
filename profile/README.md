@@ -1,5 +1,5 @@
 <div align="center">
-<img src="../logo.svg" width="180" height="180" alt="ArchAIHarness">
+<img src="../logo.png" width="180" height="180" alt="ArchAIHarness">
 <br/><br/>
 
 # ArchAIHarness
