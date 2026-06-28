@@ -8,7 +8,7 @@
 
 <br/>
 
-<table>
+<table align="center">
 <tr>
 <td align="center" width="200" height="160" style="border:1px solid #e8e8e8;border-radius:12px;padding:16px 12px">
 <a href="https://github.com/ArchAIHarness/zhuanlan-ai-and-agents" style="text-decoration:none;color:#1a1a1a;display:block">
